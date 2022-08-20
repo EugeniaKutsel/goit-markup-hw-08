@@ -1,0 +1,27 @@
+body {
+    font-family: var(--main-font);
+    font-size: 14px;
+    letter-spacing: 0.03em;
+
+    background-color: var(--basic-white);
+    color: var(--primary-text-color);
+}
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section {
+    padding: 94px 0;
+
+    &__title {
+            margin-bottom: 50px;
+    
+            font-size: 36px;
+            line-height: 1.2;
+            text-align: center;
+        }
+}
+

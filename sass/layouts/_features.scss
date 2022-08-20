@@ -1,0 +1,41 @@
+.features {
+    @extend %section
+}
+.features__list {
+    display: flex;
+}
+
+.features__item {
+    width: 270px;
+    margin-right: 30px;
+
+    &:last-child {
+            margin-right: 0;
+        }
+}
+
+.features-box {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--features-icon-box);
+    border-radius: 4px;
+}
+
+.features__title {
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.features__text {
+    line-height: 1.71;
+
+    color: var(--second-text-color);
+}

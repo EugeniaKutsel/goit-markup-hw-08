@@ -1,0 +1,33 @@
+.work {
+    padding-bottom: 94px;
+}
+
+.work__list {
+    display: flex;
+}
+
+.work__item {
+    position: relative;
+    margin-right: 30px;
+
+    &:last-child {
+            margin-right: 0;
+        }
+}
+
+.work__title {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 70px;
+    padding: 27px 0;
+
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: var(--basic-white);
+    background-color: var(--work-text-bc);
+}
