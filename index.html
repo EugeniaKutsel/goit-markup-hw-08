@@ -46,6 +46,12 @@
                     </a>
                 </li>
             </ul>
+            <!-- Burger menu -->
+            <button class="mobile-btn js-open-menu" aria-expanded="false">
+                <svg class="mobile-btn__icon" width="24" height="16">
+                    <use href="./images/icons.svg#menu"></use>
+                </svg>
+            </button>
         </div>
     </header>
     <main>
@@ -133,7 +139,7 @@
                 <h2 class="section__title">Наша команда</h2>
                 <ul class="team__list">
                     <li class="team__item">
-                        <img src="./images/team/product_designer.jpg" alt="Product Designer" width="270" height="260">
+                        <img src="./images/team/product_designer.jpg" alt="Product Designer" width="450">
                         <div class="team-border">
                             <h3 class="team-border__title">Ігор Дем'яненко</h3>
                             <p class="team-border__text">Product Designer</p>
@@ -170,8 +176,7 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img src="./images/team/frontend_developer.jpg" alt="Frontend Developer" width="270"
-                            height="260">
+                        <img src="./images/team/frontend_developer.jpg" alt="Frontend Developer" width="450">
                         <div class="team-border">
                             <h3 class="team-border__title">Ольга Рєпіна</h3>
                             <p class="team-border__text">Frontend Developer</p>
@@ -208,7 +213,7 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img src="./images/team/marketing.jpg" alt="Marketing" width="270" height="260">
+                        <img src="./images/team/marketing.jpg" alt="Marketing" width="450">
                         <div class="team-border">
                             <h3 class="team-border__title">Микола Тарасов</h3>
                             <p class="team-border__text">Marketing</p>
@@ -245,7 +250,7 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img src="./images/team/ui_designer.jpg" alt="UI Designer" width="270" height="260">
+                        <img src="./images/team/ui_designer.jpg" alt="UI Designer" width="450">
                         <div class="team-border">
                             <h3 class="team-border__title">Михайло Єрмаков</h3>
                             <p class="team-border__text">UI Designer</p>
@@ -455,7 +460,40 @@
         </div>
     </div>
 
+    <div class="menu-container is-open js-menu-container">
+        <button class="mobile-menu__btn js-close-menu" type="button">
+            <svg class="mobile-menu__icon" width="19" height="19">
+                <use href="./images/icons.svg#close_menu"></use>
+            </svg>
+        </button>
+        <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+                <a href="./index.html" class="mobile-menu__link mobile-menu__link--current">Студія</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="" class="mobile-menu__link">Контакти</a>
+            </li>
+        </ul>
+        <ul class="mobile-menu-contacts">
+            <a href="tel:+380961111111" class="mobile-menu-contacts__link link--current">+38 096 111 11 11</a>
+            <a href="mailto:info@devstudio.com" class="mobile-menu-contacts__link">info@devstudio.com</a>
+        </ul>
+        <ul class="mobile-menu-social">
+            <a href="" class="mobile-menu-social__link">Instagram</a>
+            <a href="" class="mobile-menu-social__link">Twitter</a>
+            <a href="" class="mobile-menu-social__link">Facebook</a>
+            <a href="" class="mobile-menu-social__link">LinkedIn</a>
+        </ul>
+    </div>
+
     <script src="./js/modal.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
