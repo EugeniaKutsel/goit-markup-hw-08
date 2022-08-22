@@ -3,7 +3,7 @@
     padding: 60px 0;
     background-color: var(--hero-footer-background-color);
 
-    @include mq(desk){
+    @include mq(desk) {
         text-align: left;
     }
 }
@@ -15,10 +15,13 @@
     justify-content: center;
     gap: 60px;
 
-    @include mq(tab){
+    @include mq(tab) {
         gap: 60px 165px;
+        align-items: baseline;
     }
-    @include mq(desk){
+
+    @include mq(desk) {
+        flex-wrap: nowrap;
         align-items: baseline;
         gap: 70px;
     }
@@ -46,8 +49,8 @@
     margin-bottom: 9px;
 
     &:last-child {
-            margin-bottom: 0;
-        }
+        margin-bottom: 0;
+    }
 }
 
 .foot-contacts__link {
@@ -60,8 +63,8 @@
 
     &:hover,
     &:focus {
-            color: var(--accent-color);
-        }
+        color: var(--accent-color);
+    }
 }
 
 .foot-contacts__link--address {
@@ -71,14 +74,14 @@
 
 .footer__mail {
     @include mq(desk){
-    margin-left: 23px;
+        margin-left: 23px;
     }
 }
 
 .mail-form__button {
     margin-top: 20px;
 
-    @include mq(desk){
+    @include mq(desk) {
         margin-top: 0;
     }
 }

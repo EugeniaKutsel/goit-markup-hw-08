@@ -31,7 +31,7 @@
             <ul class="contacts">
                 <li class="сontacts__item">
                     <a class="contacts__link" href="mailto:info@devstudio.com">
-                        <svg class="contacts__icon" width="16" height="12">
+                        <svg class="contacts__icon contacts__icon--mail" width="16" height="12">
                             <use href="./images/icons.svg#envelope"></use>
                         </svg>
                         info@devstudio.com
@@ -39,13 +39,19 @@
                 </li>
                 <li class="contacts__item">
                     <a class="contacts__link" href="tel:+380961111111">
-                        <svg class="contacts__icon" width="10" height="16">
+                        <svg class="contacts__icon contacts__icon--phone" width="10" height="16">
                             <use href="./images/icons.svg#smartphone"></use>
                         </svg>
                         +38 096 111 11 11
                     </a>
                 </li>
             </ul>
+            <!-- Burger menu -->
+            <button class="mobile-btn js-open-menu" aria-expanded="false">
+                <svg class="mobile-btn__icon" width="24" height="16">
+                    <use href="./images/icons.svg#menu"></use>
+                </svg>
+            </button>
         </div>
     </header>
     <main>
@@ -72,7 +78,25 @@
                     <li class="portfolio__item">
                         <a class="portfolio__link" href="">
                             <div class="portfolio-thumb">
-                                <img src="./images/portfolio/technokryak.jpg" alt="Ноутбук" width="450">
+                                <picture>
+                                    <!-- Desktop screen -->
+                                    <source media="(min-width: 1200px)" srcset="
+                                                        ./images/portfolio/technokryak_desk@1x.jpg 1x,
+                                                        ./images/portfolio/technokryak_desk@2x.jpg 2x
+                                                      " type="image/jpg" />
+
+                                    <source media="(min-width: 768px)" srcset="
+                                                        ./images/portfolio/technokryak_tab@1x.jpg 1x,
+                                                        ./images/portfolio/technokryak_tab@2x.jpg 2x
+                                                      " type="image/jpg" />
+
+                                    <source media="(max-width: 767px)" srcset="
+                                                        ./images/portfolio/technokryak_mob@1x.jpg 1x,
+                                                        ./images/portfolio/technokryak_mob@2x.jpg 2x
+                                                      " type="image/jpg" />
+                                    <img src="./images/portfolio/technokryak_mob@1x.jpg" alt="Технокряк" width="450"
+                                        loading="lazy" />
+                                </picture>
                                 <div class="portfolio-overlay">
                                     <p class="portfolio-overlay__text">Ресурс пропонує комплексні пропозиції з різним
                                         рівнем
@@ -90,8 +114,25 @@
                     <li class="portfolio__item">
                         <a class="portfolio__link" href="">
                             <div class="portfolio-thumb">
-                                <img src="./images/portfolio/new_orlean_vs_golden_star.jpg" alt="Два баскетболиста"
-                                    width="450">
+                                <picture>
+                                    <!-- Desktop screen -->
+                                    <source media="(min-width: 1200px)" srcset="
+                                        ./images/portfolio/basketball_desk@1x.jpg 1x,
+                                        ./images/portfolio/basketball_desk@2x.jpg 2x
+                                        " type="image/jpg" />
+
+                                    <source media="(min-width: 768px)" srcset="
+                                        ./images/portfolio/basketball_tab@1x.jpg 1x,
+                                        ./images/portfolio/basketball_tab@2x.jpg 2x
+                                        " type="image/jpg" />
+
+                                    <source media="(max-width: 767px)" srcset="
+                                        ./images/portfolio/basketball_mob@1x.jpg 1x,
+                                        ./images/portfolio/basketball_mob@2x.jpg 2x
+                                        " type="image/jpg" />
+                                    <img src="./images/portfolio/basketball_mob@1x.jpg" alt="Два баскетболіста"
+                                        width="450" loading="lazy" />
+                                </picture>
                                 <div class="portfolio-overlay">
                                     <p class="portfolio-overlay__text">Ресурс пропонує комплексні пропозиції з різним
                                         рівнем
@@ -109,7 +150,25 @@
                     <li class="portfolio__item">
                         <a class="portfolio__link" href="">
                             <div class="portfolio-thumb">
-                                <img src="./images/portfolio/seafood.jpg" alt="Логотип ресторана" width="450">
+                                <picture>
+                                    <!-- Desktop screen -->
+                                    <source media="(min-width: 1200px)" srcset="
+                                        ./images/portfolio/seafood_desk@1x.jpg 1x,
+                                        ./images/portfolio/seafood_desk@2x.jpg 2x
+                                        " type="image/jpg" />
+
+                                    <source media="(min-width: 768px)" srcset="
+                                        ./images/portfolio/seafood_tab@1x.jpg 1x,
+                                        ./images/portfolio/seafood_tab@2x.jpg 2x
+                                        " type="image/jpg" />
+
+                                    <source media="(max-width: 767px)" srcset="
+                                        ./images/portfolio/seafood_mob@1x.jpg 1x,
+                                        ./images/portfolio/seafood_mob@2x.jpg 2x
+                                         " type="image/jpg" />
+                                    <img src="./images/portfolio/seafood_mob@1x.jpg" alt="Логотип ресторану" width="450"
+                                        loading="lazy" />
+                                </picture>
                                 <div class="portfolio-overlay">
                                     <p class="portfolio-overlay__text">Ресурс пропонує комплексні пропозиції з різним
                                         рівнем
@@ -127,7 +186,25 @@
                     <li class="portfolio__item">
                         <a class="portfolio__link" href="">
                             <div class="portfolio-thumb">
-                                <img src="./images/portfolio/prime.jpg" alt="Наушники" width="450">
+                                <picture>
+                                    <!-- Desktop screen -->
+                                    <source media="(min-width: 1200px)" srcset="
+                                                                        ./images/portfolio/prime_desk@1x.jpg 1x,
+                                                                        ./images/portfolio/prime_desk@2x.jpg 2x
+                                                                        " type="image/jpg" />
+
+                                    <source media="(min-width: 768px)" srcset="
+                                                                        ./images/portfolio/prime_tab@1x.jpg 1x,
+                                                                        ./images/portfolio/prime_tab@2x.jpg 2x
+                                                                        " type="image/jpg" />
+
+                                    <source media="(max-width: 767px)" srcset="
+                                                                        ./images/portfolio/prime_mob@1x.jpg 1x,
+                                                                        ./images/portfolio/prime_mob@2x.jpg 2x
+                                                                         " type="image/jpg" />
+                                    <img src="./images/portfolio/prime_mob@1x.jpg" alt="Навушники" width="450"
+                                        loading="lazy" />
+                                </picture>
                                 <div class="portfolio-overlay">
                                     <p class="portfolio-overlay__text">Ресурс пропонує комплексні пропозиції з різним
                                         рівнем
@@ -145,7 +222,25 @@
                     <li class="portfolio__item">
                         <a class="portfolio__link" href="">
                             <div class="portfolio-thumb">
-                                <img src="./images/portfolio/boxes.jpg" alt="Коробки" width="450">
+                                <picture>
+                                    <!-- Desktop screen -->
+                                    <source media="(min-width: 1200px)" srcset="
+                                                                        ./images/portfolio/boxes_desk@1x.jpg 1x,
+                                                                        ./images/portfolio/boxes_desk@2x.jpg 2x
+                                                                        " type="image/jpg" />
+
+                                    <source media="(min-width: 768px)" srcset="
+                                                                        ./images/portfolio/boxes_tab@1x.jpg 1x,
+                                                                        ./images/portfolio/boxes_tab@2x.jpg 2x
+                                                                        " type="image/jpg" />
+
+                                    <source media="(max-width: 767px)" srcset="
+                                                                        ./images/portfolio/boxes_mob@1x.jpg 1x,
+                                                                        ./images/portfolio/boxes_mob@2x.jpg 2x
+                                                                         " type="image/jpg" />
+                                    <img src="./images/portfolio/boxes_mob@1x.jpg" alt="Дві коробки" width="450"
+                                        loading="lazy" />
+                                </picture>
                                 <div class="portfolio-overlay">
                                     <p class="portfolio-overlay__text">Ресурс пропонує комплексні пропозиції з різним
                                         рівнем
@@ -163,7 +258,25 @@
                     <li class="portfolio__item">
                         <a class="portfolio__link" href="">
                             <div class="portfolio-thumb">
-                                <img src="./images/portfolio/inspiration_has_no_borders.jpg" alt="Монитор" width="450">
+                                <picture>
+                                    <!-- Desktop screen -->
+                                    <source media="(min-width: 1200px)" srcset="
+                                                                        ./images/portfolio/inspiration_desk@1x.jpg 1x,
+                                                                        ./images/portfolio/inspiration_desk@2x.jpg 2x
+                                                                        " type="image/jpg" />
+
+                                    <source media="(min-width: 768px)" srcset="
+                                                                        ./images/portfolio/inspiration_tab@1x.jpg 1x,
+                                                                        ./images/portfolio/inspiration_tab@2x.jpg 2x
+                                                                        " type="image/jpg" />
+
+                                    <source media="(max-width: 767px)" srcset="
+                                                                        ./images/portfolio/inspiration_mob@1x.jpg 1x,
+                                                                        ./images/portfolio/inspiration_mob@2x.jpg 2x
+                                                                         " type="image/jpg" />
+                                    <img src="./images/portfolio/inspiration_mob@1x.jpg" alt="Комп'ютер" width="450"
+                                        loading="lazy" />
+                                </picture>
                                 <div class="portfolio-overlay">
                                     <p class="portfolio-overlay__text">Ресурс пропонує комплексні пропозиції з різним
                                         рівнем
@@ -181,7 +294,25 @@
                     <li class="portfolio__item">
                         <a class="portfolio__link" href="">
                             <div class="portfolio-thumb">
-                                <img src="./images/portfolio/limited_edition.jpg" alt="Журнал" width="450">
+                                <picture>
+                                    <!-- Desktop screen -->
+                                    <source media="(min-width: 1200px)" srcset="
+                                                                    ./images/portfolio/limited_desk@1x.jpg 1x,
+                                                                    ./images/portfolio/limited_desk@2x.jpg 2x
+                                                                    " type="image/jpg" />
+
+                                    <source media="(min-width: 768px)" srcset="
+                                                                    ./images/portfolio/limited_tab@1x.jpg 1x,
+                                                                    ./images/portfolio/limited_tab@2x.jpg 2x
+                                                                    " type="image/jpg" />
+
+                                    <source media="(max-width: 767px)" srcset="
+                                                                    ./images/portfolio/limited_mob@1x.jpg 1x,
+                                                                    ./images/portfolio/limited_mob@2x.jpg 2x
+                                                                     " type="image/jpg" />
+                                    <img src="./images/portfolio/limited_mob@1x.jpg" alt="Журнал" width="450"
+                                        loading="lazy" />
+                                </picture>
                                 <div class="portfolio-overlay">
                                     <p class="portfolio-overlay__text">Ресурс пропонує комплексні пропозиції з різним
                                         рівнем
@@ -199,7 +330,25 @@
                     <li class="portfolio__item">
                         <a class="portfolio__link" href="">
                             <div class="portfolio-thumb">
-                                <img src="./images/portfolio/lab.jpg" alt="Ярлык" width="450">
+                                <picture>
+                                    <!-- Desktop screen -->
+                                    <source media="(min-width: 1200px)" srcset="
+                                                                        ./images/portfolio/lab_desk@1x.jpg 1x,
+                                                                        ./images/portfolio/lab_desk@2x.jpg 2x
+                                                                        " type="image/jpg" />
+
+                                    <source media="(min-width: 768px)" srcset="
+                                                                        ./images/portfolio/lab_tab@1x.jpg 1x,
+                                                                        ./images/portfolio/lab_tab@2x.jpg 2x
+                                                                        " type="image/jpg" />
+
+                                    <source media="(max-width: 767px)" srcset="
+                                                                        ./images/portfolio/lab_mob@1x.jpg 1x,
+                                                                        ./images/portfolio/lab_mob@2x.jpg 2x
+                                                                         " type="image/jpg" />
+                                    <img src="./images/portfolio/lab_mob@1x.jpg" alt="Ярлик" width="450"
+                                        loading="lazy" />
+                                </picture>
                                 <div class="portfolio-overlay">
                                     <p class="portfolio-overlay__text">Ресурс пропонує комплексні пропозиції з різним
                                         рівнем
@@ -217,8 +366,25 @@
                     <li class="portfolio__item">
                         <a class="portfolio__link" href="">
                             <div class="portfolio-thumb">
-                                <img src="./images/portfolio/growing_business.jpg" alt="Работа за ноутбуком"
-                                    width="450">
+                                <picture>
+                                    <!-- Desktop screen -->
+                                    <source media="(min-width: 1200px)" srcset="
+                                                                        ./images/portfolio/grow-buisness_desk@1x.jpg 1x,
+                                                                        ./images/portfolio/grow-buisness_desk@2x.jpg 2x
+                                                                        " type="image/jpg" />
+
+                                    <source media="(min-width: 768px)" srcset="
+                                                                        ./images/portfolio/grow-buisness_tab@1x.jpg 1x,
+                                                                        ./images/portfolio/grow-buisness_tab@2x.jpg 2x
+                                                                        " type="image/jpg" />
+
+                                    <source media="(max-width: 767px)" srcset="
+                                                                        ./images/portfolio/grow-buisness_mob@1x.jpg 1x,
+                                                                        ./images/portfolio/grow-buisness_mob@2x.jpg 2x
+                                                                         " type="image/jpg" />
+                                    <img src="./images/portfolio/grow-buisness_mob@1x.jpg" alt="Ноутбук" width="450"
+                                        loading="lazy" />
+                                </picture>
                                 <div class="portfolio-overlay">
                                     <p class="portfolio-overlay__text">Ресурс пропонує комплексні пропозиції з різним
                                         рівнем
@@ -308,6 +474,41 @@
             </div>
         </div>
     </footer>
+
+    <div class="menu-container js-menu-container">
+        <button class="mobile-menu__btn js-close-menu" type="button">
+            <svg class="mobile-menu__icon" width="19" height="19">
+                <use href="./images/icons.svg#close_menu"></use>
+            </svg>
+        </button>
+        <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+                <a href="./index.html" class="mobile-menu__link mobile-menu__link--current">Студія</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="" class="mobile-menu__link">Контакти</a>
+            </li>
+        </ul>
+        <ul class="mobile-menu-contacts">
+            <a href="tel:+380961111111" class="mobile-menu-contacts__link link--current">+38 096 111 11 11</a>
+            <a href="mailto:info@devstudio.com" class="mobile-menu-contacts__link">info@devstudio.com</a>
+        </ul>
+        <ul class="mobile-menu-social">
+            <a href="" class="mobile-menu-social__link">Instagram</a>
+            <a href="" class="mobile-menu-social__link">Twitter</a>
+            <a href="" class="mobile-menu-social__link">Facebook</a>
+            <a href="" class="mobile-menu-social__link">LinkedIn</a>
+        </ul>
+    </div>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script src="./js/mobile-menu.js"></script>
+
 </body>
 
 </html>

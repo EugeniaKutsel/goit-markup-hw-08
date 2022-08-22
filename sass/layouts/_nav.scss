@@ -92,4 +92,15 @@
 .contacts__icon {
     margin-right: 10px;
     fill: currentColor;
+
+    @include mq(tab-only){
+        &--mail {
+            width: 14px;
+            height: 10px;
+        }
+        &--phone {
+            width: 10px;
+            height: 14px;
+        }
+    }
 }

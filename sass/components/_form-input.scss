@@ -11,6 +11,6 @@
         }
 }
 
-.form__input:focus+.form__icon {
+.form__input:focus + .form__icon {
     color: var(--accent-color);
 }
