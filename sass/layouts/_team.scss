@@ -16,13 +16,10 @@
 }
 
 .team__item {
-    width: 450px;
+    width: 100%;
 
     @include mq(tab){
-        width: 354px;
-    }
-    @include mq(desk){
-        width: 270px;
+        max-width: 354px;
     }
 }
 .team-border__title {
@@ -60,20 +57,12 @@
     justify-content: center;
     gap: 10px;
     margin-top: 16px;
-    padding: 0 122px;
-
-    @include mq(tab){
-        padding: 0 74px;
-    }
-    @include mq(desk){
-        padding: 0 32px;
-    }
 }
 
 .socials__link {
     display: flex;
-    width: 44px;
-    height: 44px;
+    max-width: 44px;
+    min-height: 44px;
     align-items: center;
     justify-content: center;
 

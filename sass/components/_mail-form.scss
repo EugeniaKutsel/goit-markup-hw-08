@@ -1,5 +1,5 @@
 .mail-form__input {
-    width: 358px;
+    max-width: 358px;
     min-height: 50px;
     padding: 15px 16px;
     margin-right: 12px;
@@ -16,7 +16,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 200px;
+    max-width: 200px;
     height: 50px;
     font-size: 16px;
     font-weight: 700;

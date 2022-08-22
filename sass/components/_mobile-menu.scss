@@ -25,7 +25,7 @@
 }
 
 .menu-container {
-    position: fixed;
+        position: fixed;
         top: 0;
         left: 0;
         width: 100vw;
@@ -34,11 +34,11 @@
         flex-direction: column;
         padding: 32px;
         background-color: var(--basic-white);
-        transform: translateX(0);
+        transform: translateX(100%);
         transition: transform 250ms ease-in-out;
 
         &.is-open {
-                transform: translateX(100%);
+                transform: translateX(0);
             }
 
     @include mq(tab) {
