@@ -1,10 +1,11 @@
 // Utils
 @import "./utils/variables";
 @import "./utils/visually-hidden";
-@import "./utils/placeholders";
+@import "./utils/mixin";
 // Components
 @import "./components/reset";
 @import "./components/common";
+@import "./components/container";
 @import "./components/logo";
 @import "./components/button";
 @import "./components/social-icon";
@@ -16,6 +17,7 @@
 @import "./components/form-input";
 @import "./components/form-checkbox";
 @import "./components/mail-form";
+@import "./components/mobile-menu";
 // Layouts
 @import "./layouts/header";
 @import "./layouts/nav";

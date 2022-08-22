@@ -15,25 +15,31 @@
 }
 
 .hero__title {
-    width: 696px;
+    width: 360px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
 
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
     color: var(--basic-white);
+
+    @include mq(desk){
+        width: 696px;
+        font-size: 44px;
+        line-height: 1.36;
+    }
 }
 
 .hero__button {
-    min-width: 216px;
+    min-width: 200px;
     min-height: 50px;
-    padding: 10px 32px;
+    padding: 10px 24px;
 
     font-weight: 700;
 
@@ -50,4 +56,9 @@
             color: var(--accent-color);
             background-color: var(--basic-white);
         }
+
+    @include mq(desk){
+        min-width: 216px;
+        padding: 10px 32px;
+    }
 }

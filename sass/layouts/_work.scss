@@ -1,5 +1,9 @@
 .work {
-    padding-bottom: 94px;
+    display: none;
+
+    @include mq(desk){
+        display: block;
+    }
 }
 
 .work__list {

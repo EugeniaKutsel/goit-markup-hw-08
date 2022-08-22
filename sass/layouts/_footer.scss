@@ -1,13 +1,27 @@
 .footer {
+    text-align: center;
     padding: 60px 0;
     background-color: var(--hero-footer-background-color);
+
+    @include mq(desk){
+        text-align: left;
+    }
 }
 
 .footer__container-flex {
     display: flex;
-    align-items: baseline;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
-    gap: 70px;
+    gap: 60px;
+
+    @include mq(tab){
+        gap: 60px 165px;
+    }
+    @include mq(desk){
+        align-items: baseline;
+        gap: 70px;
+    }
 }
 
 .footer__text {
@@ -15,7 +29,6 @@
 
     font-weight: 700;
     line-height: 1.14;
-    text-align: left;
     color: var(--basic-white);
 }
 
@@ -58,4 +71,12 @@
 
 .footer__mail {
     margin-left: 23px;
+}
+
+.mail-form__button {
+    margin-top: 20px;
+
+    @include mq(desk){
+        margin-top: 0;
+    }
 }

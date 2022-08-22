@@ -1,16 +1,15 @@
 .clients {
-    @extend %section;
+    @include section;
 }
 .clients__list {
     display: flex;
-}
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
 
-.clients__item {
-    margin-right: 30px;
-
-    &:last-child {
-            margin-right: 0;
-        }
+    @include mq(desk){
+        flex-wrap: nowrap;
+    }
 }
 
 .clients__link {

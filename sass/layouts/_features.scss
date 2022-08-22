@@ -1,29 +1,40 @@
 .features {
-    @extend %section
+    @include section;
 }
 .features__list {
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    @include mq(tab){
+
+    }
+    @include mq(desk){
+        flex-wrap: nowrap;
+    }
+ 
 }
-
 .features__item {
-    width: 270px;
-    margin-right: 30px;
-
-    &:last-child {
-            margin-right: 0;
-        }
+    @include mq(tab){
+        width: 354px;
+    }
 }
 
 .features-box {
     display: flex;
-    width: 270px;
-    height: 120px;
-    margin-bottom: 30px;
     align-items: center;
     justify-content: center;
-
+    height: 120px;
+    margin-bottom: 30px;
     background-color: var(--features-icon-box);
     border-radius: 4px;
+
+    @include mq(tab){
+        width: 354px;
+    }
+    @include mq(desk) {
+        width: 270px;
+    }
 }
 
 .features__title {
@@ -31,7 +42,15 @@
 
     font-size: 14px;
     line-height: 1.14;
+    text-align: center;
     text-transform: uppercase;
+
+    @include mq(tab) {
+        text-align: left;
+    }
+    @include mq(desk) {
+        text-align: left;
+    }
 }
 
 .features__text {
