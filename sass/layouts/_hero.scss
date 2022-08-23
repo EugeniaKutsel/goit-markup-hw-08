@@ -1,7 +1,7 @@
 .hero {
     max-width: 1600px;
-    min-height: 600px;
-    padding: 200px 0;
+    max-height: 400px;
+    padding: 118px 0;
     margin-left: auto;
     margin-right: auto;
 
@@ -35,7 +35,12 @@
         @include mq(retina) {
             background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero@2x_lg.jpg);
          }
-}
+    }
+
+    @include mq(desk){
+        min-height: 600px;
+        padding: 200px;
+    }
 }
 
 .hero__title {
