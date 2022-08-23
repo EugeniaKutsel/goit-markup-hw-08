@@ -268,7 +268,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 295px;
   background-color: var(--portfolio-animation);
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
@@ -303,7 +303,8 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 450px;
+  width: 90vw;
+  max-width: 450px;
   background-color: var(--basic-white);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -358,6 +359,7 @@ body {
 }
 
 .form__title {
+  width: 100%;
   margin-bottom: 12px;
   font-size: 20px;
   line-height: 1.15;
@@ -418,6 +420,7 @@ body {
 }
 
 .form__label {
+  width: 100%;
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.17;
@@ -442,7 +445,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-width: 200px;
+  width: 100%;
+  max-width: 200px;
   min-height: 50px;
   padding: 10px 52px;
   margin: 0 auto;
@@ -482,7 +486,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-width: 370px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -495,16 +498,16 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .form-checkbox__label {
-    min-width: 425px;
+    max-width: 425px;
     font-size: 14px;
     line-height: 1.71;
   }
 }
 
 .form-checkbox__icon {
-  display: inline-block;
-  width: 16px;
-  height: 15px;
+  display: block;
+  min-width: 16px;
+  min-height: 15px;
   margin-right: 8px;
   border: 2px solid var(--primary-text-color);
   border-radius: 2px;
@@ -1172,7 +1175,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 170px;
+  width: 210px;
   height: 92px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1189,6 +1192,16 @@ body {
 .clients__link:hover, .clients__link:focus {
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
+}
+@media screen and (min-width: 768px) {
+  .clients__link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__link {
+    width: 170px;
+  }
 }
 
 .clients__icon {
@@ -1431,21 +1444,21 @@ body {
 }
 
 .portfolio__item {
-  max-width: 450px;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .portfolio__item {
-    max-width: 354px;
+    width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
   .portfolio__item {
-    max-width: 370px;
+    width: 370px;
   }
 }
 
 .portfolio-border {
-  min-width: 322px;
+  width: 100%;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: transparent;
